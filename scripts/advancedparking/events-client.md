@@ -1,6 +1,6 @@
 # Events (client)
 
-### AP:vehicleSpawned
+## AP:vehicleSpawned
 
 Triggered when a vehicle has been spawned by AdvancedParking. This is also triggered for players outside of scope, so you need to check if the entity exists.
 

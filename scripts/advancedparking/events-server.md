@@ -1,6 +1,6 @@
 # Events (server)
 
-### AP:vehicleSpawned
+## AP:vehicleSpawned
 
 Triggered when a vehicle has been spawned by AdvancedParking.
 

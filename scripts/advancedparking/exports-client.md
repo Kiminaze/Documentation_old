@@ -1,6 +1,6 @@
 # Exports (client)
 
-### Enable(enable)
+## Enable
 
 Enable/disable automatic saving of vehicles for a client.
 
@@ -11,9 +11,11 @@ Enable/disable automatic saving of vehicles for a client.
 exports["AdvancedParking"]:Enable(false)
 ```
 
+
+
 ***
 
-### UpdateVehicle(vehicle)
+## UpdateVehicle
 
 Allows manually updating a vehicle if necessary.
 
@@ -24,9 +26,11 @@ Allows manually updating a vehicle if necessary.
 exports["AdvancedParking"]:UpdateVehicle(vehicle)
 ```
 
+
+
 ***
 
-### GetVehiclePosition(plate)
+## GetVehiclePosition
 
 Returns the position of a single vehicle.
 
@@ -40,9 +44,11 @@ Returns the position of a single vehicle.
 local position = exports["AdvancedParking"]:GetVehiclePosition(plate)
 ```
 
+
+
 ***
 
-### GetVehiclePositions(...)
+## GetVehiclePositions
 
 Returns the positions of several given vehicles.
 
@@ -59,9 +65,11 @@ for plate, position in pairs(positions) do
 end
 ```
 
+
+
 ***
 
-### DeleteVehicle(vehicle, keepInWorld)
+## DeleteVehicle
 
 Deletes a vehicle from the world and the internal table so that it doesn't respawn.
 
@@ -73,9 +81,11 @@ Deletes a vehicle from the world and the internal table so that it doesn't respa
 exports["AdvancedParking"]:DeleteVehicle(vehicle, false)
 ```
 
+
+
 ***
 
-### DeleteVehicleOnServer(identifier, networkId, plate, keepInWorld)
+## DeleteVehicleOnServer
 
 Delete a vehicle without having access to the entity directly. At least one of the first three parameters must be provided.
 
@@ -92,4 +102,3 @@ local plate = GetVehicleNumberPlateText(vehicle)
 
 exports["AdvancedParking"]:DeleteVehicleOnServer(identifier, networkId, plate, true)
 ```
-
