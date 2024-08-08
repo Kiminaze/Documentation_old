@@ -12,6 +12,26 @@ Deletes a vehicle from the world and the internal table so that it doesn't respa
 exports["AdvancedParking"]:DeleteVehicle(vehicle, false)
 ```
 
+
+
+### DeleteVehicle(vehicle, keepInWorld)
+
+{% tabs %}
+{% tab title="Para" %}
+```lua
+exports["AdvancedParking"]:DeleteVehicle(vehicle, false)
+```
+{% endtab %}
+
+{% tab title="Example" %}
+Deletes a vehicle from the world and the internal table so that it doesn't respawn.
+
+<mark style="color:red;">**Parameters:**</mark>\
+**vehicle** - `int` - The vehicle to delete.\
+**keepInWorld?** - `bool` - If the vehicle should stay in the world.
+{% endtab %}
+{% endtabs %}
+
 ***
 
 ### GetVehiclePosition(plate)
@@ -26,6 +46,8 @@ Returns the position of a single vehicle.
 
 <pre class="language-lua"><code class="lang-lua"><strong>local position = exports["AdvancedParking"]:GetVehiclePosition(plate)
 </strong></code></pre>
+
+
 
 ***
 
@@ -46,6 +68,8 @@ for plate, position in pairs(positions) do
 end
 ```
 
+
+
 ***
 
 ### DeleteVehicleUsingData(identifier, networkId, plate, keepInWorld)
@@ -65,6 +89,22 @@ local plate = GetVehicleNumberPlateText(vehicle)
 
 exports["AdvancedParking"]:DeleteVehicleUsingData(identifier, networkId, plate, true)
 ```
+
+{% tabs %}
+{% tab title="First Tab" %}
+```
+local identifier = Entity(vehicle).state.ap_id
+local networkId = NetworkGetNetworkIdFromEntity(vehicle)
+local plate = GetVehicleNumberPlateText(vehicle)
+
+exports["AdvancedParking"]:DeleteVehicleUsingData(identifier, networkId, plate, true)
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 ***
 
