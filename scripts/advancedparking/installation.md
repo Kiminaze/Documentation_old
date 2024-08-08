@@ -15,20 +15,21 @@
 3. Download [kimi\_callbacks.zip](https://github.com/Kiminaze/kimi\_callbacks/releases/latest) and extract it into your resources folder.
 4.  Start the resource in your server.cfg:
 
-    ```
+    {% code fullWidth="false" %}
+    ```lua
     ensure AdvancedParking
     ```
+    {% endcode %}
+5. Adding the [`Deleting vehicles`](installation.md#deleting-vehicles) function to your framework and other scripts, if they need to remove vehicle that are saved by AdvancedParking.
 
 ***
 
-## Compatibility
-
 ### Deleting vehicles
 
-The vehicle persistence might require you to edit some scripts in order to delete vehicles properly. This has been made very easy thanks to the included file `fixDeleteVehicle.lua`.
+This has been made very easy thanks to the included file `fixDeleteVehicle.lua` that you will find inside the AdvancedParking folder. **You don´t need to use the exports!**
 
-* Drop it into the folder of a resource that does not delete vehicles properly (including `es_extended` or `qb-core`).
-*   Then add the following line inside the fxmanifest of that resource:
+* Copy and paste the `fixDeleteVehicle.lua` file into the folder of your framework like  `es_extended` or `qb-core`. ( Directly in the framework folder, not in any sub folder. )
+*   Then add the following line inside the fxmanifest of that framework resource:
 
     {% code fullWidth="false" %}
     ```lua
@@ -36,4 +37,10 @@ The vehicle persistence might require you to edit some scripts in order to delet
     ```
     {% endcode %}
 
-**Note:** There might be some scripts out there where this will not work. If you find yourself in this situation, it might be best to simply ask for help in our support.
+If any other script does not delete a vehicle properly (The car gets deleted but appears instantly again.) then repeat these steps in the respective script.
+
+{% hint style="info" %}
+There might be some scripts out there where this will not work. If you find yourself in this situation, it might be best to simply ask for help in our support.
+{% endhint %}
+
+{% embed url="https://youtu.be/Kv-V1RktcTc" %}
