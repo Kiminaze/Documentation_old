@@ -1,6 +1,6 @@
 # Exports (client)
 
-### Enable(enable)
+## Enable
 
 Enable/disable the ability to interact with the script functions for a single client.
 

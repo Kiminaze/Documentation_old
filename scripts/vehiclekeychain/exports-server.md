@@ -1,6 +1,6 @@
 # Exports (server)
 
-### AddKey(playerId, plate, count)
+## AddKey
 
 Add key(s) to a player using the player id and a plate.
 
@@ -15,7 +15,11 @@ Add key(s) to a player using the player id and a plate.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:AddKey(playerId, plate, count)
 </strong></code></pre>
 
-### AddKeyUsingIdentifier(identifier, plate, count)
+
+
+***
+
+## AddKeyUsingIdentifier
 
 Add key(s) to a player using the player's identifier and a plate.
 
@@ -30,9 +34,11 @@ Add key(s) to a player using the player's identifier and a plate.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:AddKeyUsingIdentifier(identifier, plate, count)
 </strong></code></pre>
 
+
+
 ***
 
-### BuyNewKey(playerId, plate, count)
+## BuyNewKey
 
 Add key(s) to a player using the player id and a plate and charge the player for it.
 
@@ -47,9 +53,11 @@ Add key(s) to a player using the player id and a plate and charge the player for
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:BuyNewKey(playerId, plate, count)
 </strong></code></pre>
 
+
+
 ***
 
-### RemoveKey(playerId, plate, count)
+## RemoveKey
 
 Remove key(s) from the player using the player id and plate.
 
@@ -64,7 +72,11 @@ Remove key(s) from the player using the player id and plate.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:RemoveKey(playerId, plate, count)
 </strong></code></pre>
 
-### RemoveKeyUsingIdentifier(identifier, plate, count)
+
+
+***
+
+## RemoveKeyUsingIdentifier
 
 Remove key(s) from the player using the identifier and plate.
 
@@ -79,9 +91,11 @@ Remove key(s) from the player using the identifier and plate.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:RemoveKeyUsingIdentifier(identifier, plate, count)
 </strong></code></pre>
 
+
+
 ***
 
-### AddTempKey(playerId, plate)
+## AddTempKey
 
 Add a temporary key to the player using the player id and plate.
 
@@ -95,7 +109,11 @@ Add a temporary key to the player using the player id and plate.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:AddTempKey(playerId, plate)
 </strong></code></pre>
 
-### AddTempKeyUsingIdentifier(identifier, plate)
+
+
+***
+
+## AddTempKeyUsingIdentifier
 
 Add a temporary key to the player using the identifier and plate.
 
@@ -109,9 +127,11 @@ Add a temporary key to the player using the identifier and plate.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:AddTempKeyUsingIdentifier(identifier, plate)
 </strong></code></pre>
 
+
+
 ***
 
-### RemoveTempKey(playerId, plate)
+## RemoveTempKey
 
 Remove a temporary key from a player using the player id and plate.
 
@@ -125,7 +145,11 @@ Remove a temporary key from a player using the player id and plate.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:RemoveTempKey(playerId, plate)
 </strong></code></pre>
 
-### RemoveTempKeyUsingIdentifier(identifier, plate)
+
+
+***
+
+## RemoveTempKeyUsingIdentifier
 
 Remove a temporary key from a player using the identifier and plate.
 
@@ -139,9 +163,11 @@ Remove a temporary key from a player using the identifier and plate.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:RemoveTempKeyUsingIdentifier(identifier, plate)
 </strong></code></pre>
 
+
+
 ***
 
-### ChangeKeyOwner(playerIdSender, playerIdReceiver, plate, count)
+## ChangeKeyOwner
 
 Give key(s) from one player to another using their player ids.
 
@@ -157,7 +183,11 @@ Give key(s) from one player to another using their player ids.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:ChangeKeyOwner(playerIdSender, playerIdReceiver, plate, count)
 </strong></code></pre>
 
-### ChangeKeyOwnerUsingIdentifier(identifierSender, identifierReceiver, plate, count)
+
+
+***
+
+## ChangeKeyOwnerUsingIdentifier
 
 Give key(s) from one player to another using their identifiers.
 
@@ -173,9 +203,11 @@ Give key(s) from one player to another using their identifiers.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:ChangeKeyOwnerUsingIdentifier(identifierSender, identifierReceiver, plate, count)
 </strong></code></pre>
 
+
+
 ***
 
-### ChangeVehicleOwner(playerIdSender, playerIdReceiver, plate)
+## ChangeVehicleOwner
 
 Change the owner of a vehicle.
 
@@ -190,7 +222,11 @@ Change the owner of a vehicle.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:ChangeVehicleOwner(playerIdSender, playerIdReceiver, plate)
 </strong></code></pre>
 
-### ChangeVehicleOwnerUsingIdentifier(identifierSender, identifierReceiver, plate)
+
+
+***
+
+## ChangeVehicleOwnerUsingIdentifier
 
 Change the owner of a vehicle using their identifiers.
 
@@ -205,9 +241,11 @@ Change the owner of a vehicle using their identifiers.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:ChangeVehicleOwnerUsingIdentifier(identifierSender, identifierReceiver, plate)
 </strong></code></pre>
 
+
+
 ***
 
-### ExchangeLocks(playerId, plate)
+## ExchangeLocks
 
 Removes all created keys with a specified plate and charges the player for it.
 
@@ -221,7 +259,11 @@ Removes all created keys with a specified plate and charges the player for it.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:ExchangeLocks(playerId, plate)
 </strong></code></pre>
 
-### ExchangeLocksUsingIdentifier(identifier, plate)
+
+
+***
+
+## ExchangeLocksUsingIdentifier
 
 Removes all created keys with a specified plate and charges the player for it.
 
@@ -235,7 +277,11 @@ Removes all created keys with a specified plate and charges the player for it.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleKeyChain"]:ExchangeLocksUsingIdentifier(identifier, plate)
 </strong></code></pre>
 
-### RemoveAllKeysUsingPlate(plate)
+
+
+***
+
+## RemoveAllKeysUsingPlate
 
 Removes all created keys with a specified plate.
 
@@ -245,9 +291,11 @@ Removes all created keys with a specified plate.
 <pre class="language-lua"><code class="lang-lua"><strong>exports["VehicleKeyChain"]:RemoveAllKeysUsingPlate(plate)
 </strong></code></pre>
 
+
+
 ***
 
-### IsVehicleOwner(playerId, plate)
+## IsVehicleOwner
 
 Check if a player is the owner of a vehicle.
 
@@ -261,7 +309,11 @@ Check if a player is the owner of a vehicle.
 <pre class="language-lua"><code class="lang-lua"><strong>local isVehicleOwner = exports["VehicleKeyChain"]:IsVehicleOwner(playerId, plate)
 </strong></code></pre>
 
-### IsVehicleOwnerUsingIdentifier(identifier, plate)
+
+
+***
+
+## IsVehicleOwnerUsingIdentifier
 
 Check if a player is the owner of a vehicle.
 
@@ -275,9 +327,11 @@ Check if a player is the owner of a vehicle.
 <pre class="language-lua"><code class="lang-lua"><strong>local isVehicleOwner = exports["VehicleKeyChain"]:IsVehicleOwnerUsingIdentifier(identifier, plate)
 </strong></code></pre>
 
+
+
 ***
 
-### IsKeyOwner(playerId, plate, model)
+## IsKeyOwner
 
 Check if a player is the owner of a key for a vehicle (excluding being the owner of the vehicle).
 
@@ -292,7 +346,11 @@ Check if a player is the owner of a key for a vehicle (excluding being the owner
 <pre class="language-lua"><code class="lang-lua"><strong>local isKeyOwner = exports["VehicleKeyChain"]:IsKeyOwner(playerId, plate, model)
 </strong></code></pre>
 
-### IsKeyOwnerUsingIdentifier(identifier, plate)
+
+
+***
+
+## IsKeyOwnerUsingIdentifier
 
 Check if a player is the owner of a key for a vehicle (excluding being the owner of the vehicle).
 
@@ -306,9 +364,11 @@ Check if a player is the owner of a key for a vehicle (excluding being the owner
 <pre class="language-lua"><code class="lang-lua"><strong>local isKeyOwner = exports["VehicleKeyChain"]:IsKeyOwnerUsingIdentifier(identifier, plate)
 </strong></code></pre>
 
+
+
 ***
 
-### IsVehicleOrKeyOwner(playerId, plate, model)
+## IsVehicleOrKeyOwner
 
 Check if a player is the owner of a vehicle or its key.
 
@@ -323,7 +383,11 @@ Check if a player is the owner of a vehicle or its key.
 <pre class="language-lua"><code class="lang-lua"><strong>local isOwner = exports["VehicleKeyChain"]:IsVehicleOrKeyOwner(playerId, plate, model)
 </strong></code></pre>
 
-### IsVehicleOrKeyOwnerUsingIdentifier(identifier, plate)
+
+
+***
+
+## IsVehicleOrKeyOwnerUsingIdentifier
 
 Check if a player is the owner of a vehicle or its key.
 
@@ -337,9 +401,11 @@ Check if a player is the owner of a vehicle or its key.
 <pre class="language-lua"><code class="lang-lua"><strong>local isOwner = exports["VehicleKeyChain"]:IsVehicleOrKeyOwnerUsingIdentifier(identifier, plate)
 </strong></code></pre>
 
+
+
 ***
 
-### IsTempKeyOwner(playerId, plate)
+## IsTempKeyOwner
 
 Check if a player is the owner of a temporary key for a vehicle.
 
@@ -353,9 +419,11 @@ Check if a player is the owner of a temporary key for a vehicle.
 <pre class="language-lua"><code class="lang-lua"><strong>local isTempKeyOwner = exports["VehicleKeyChain"]:IsTempKeyOwner(playerId, plate)
 </strong></code></pre>
 
+
+
 ***
 
-### GetPlayerKeys(playerId)
+## GetPlayerKeys
 
 Returns a list of all keys a player owns.
 
@@ -374,9 +442,11 @@ Returns a list of all keys a player owns.
 end
 </code></pre>
 
+
+
 ***
 
-### GetPlayerVehicles(playerId)
+## GetPlayerVehicles
 
 Returns a list of all vehicles a player owns.
 
@@ -394,9 +464,11 @@ Returns a list of all vehicles a player owns.
 end
 </code></pre>
 
+
+
 ***
 
-### GetPlayerVehiclesAndKeyCount(playerId)
+## GetPlayerVehiclesAndKeyCount
 
 Returns a list of all vehicles a player owns including the amount of keys.
 
@@ -415,9 +487,11 @@ Returns a list of all vehicles a player owns including the amount of keys.
 end
 </code></pre>
 
+
+
 ***
 
-### GetPlayerTempKeys(playerId)
+## GetPlayerTempKeys
 
 Returns a list of all temporary keys a player owns.
 
@@ -435,9 +509,11 @@ Returns a list of all temporary keys a player owns.
 end
 </code></pre>
 
+
+
 ***
 
-### GetPlayerVehiclesAndKeys(playerId)
+## GetPlayerVehiclesAndKeys
 
 Returns both the results from [GetPlayerVehicles](https://docs.kiminaze.de/scripts/vehiclekeychain/exports-server#getplayervehicles-playerid) and [GetPlayerKeys](https://docs.kiminaze.de/scripts/vehiclekeychain/exports-server#getplayerkeys-playerid).
 

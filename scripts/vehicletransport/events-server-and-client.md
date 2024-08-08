@@ -4,7 +4,7 @@ description: These events are executed on server and client side.
 
 # Events (server & client)
 
-### VT:vehicleAttached
+## VT:vehicleAttached
 
 Triggered when a vehicle was successfully attached to a transport vehicle.
 
@@ -24,9 +24,11 @@ AddEventHandler("VT:vehicleAttached", function(vehicleNetworkId, transportNetwor
 end)
 ```
 
+
+
 ***
 
-### VT:vehicleDetached
+## VT:vehicleDetached
 
 Triggered when a vehicle was successfully detached from a transport vehicle.
 
