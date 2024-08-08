@@ -14,6 +14,23 @@ exports["AdvancedParking"]:DeleteVehicle(vehicle, false)
 
 ***
 
+<details>
+
+<summary>GetVehiclePosition(plate)</summary>
+
+Returns the position of a single vehicle.
+
+<mark style="color:red;">**Parameters:**</mark>\
+**plate** - `string` - The license plate text of a vehicle.
+
+<mark style="color:green;">**Returns:**</mark>\
+`vector3?` - The position of the vehicle or nil.
+
+<pre class="language-lua"><code class="lang-lua"><strong>local position = exports["AdvancedParking"]:GetVehiclePosition(plate)
+</strong></code></pre>
+
+</details>
+
 ### GetVehiclePosition(plate)
 
 Returns the position of a single vehicle.
@@ -47,6 +64,30 @@ end
 ```
 
 ***
+
+<details>
+
+<summary>DeleteVehicleUsingData(identifier, networkId, plate, keepInWorld)</summary>
+
+
+
+Delete a vehicle without having access to the entity directly. At least one of the first three parameters must be provided.
+
+<mark style="color:red;">**Parameters:**</mark>\
+**identifier?** - `string` - The unique identifier provided by AdvancedParking.\
+**networkId?** - `int` - The vehicle entity's network id.\
+**plate?** - `string` - The vehicles license plate text.\
+**keepInWorld?** - `bool` - If the vehicle should stay in the world.
+
+```lua
+local identifier = Entity(vehicle).state.ap_id
+local networkId = NetworkGetNetworkIdFromEntity(vehicle)
+local plate = GetVehicleNumberPlateText(vehicle)
+
+exports["AdvancedParking"]:DeleteVehicleUsingData(identifier, networkId, plate, true)
+```
+
+</details>
 
 ### DeleteVehicleUsingData(identifier, networkId, plate, keepInWorld)
 
