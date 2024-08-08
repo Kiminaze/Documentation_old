@@ -3,7 +3,10 @@
 ## Requirements
 
 * None.
-* Note: This script uses the `ShootSingleBulletBetweenCoords` native which could potentially get detected by some Anticheat resources.
+
+{% hint style="warning" %}
+This script uses the `ShootSingleBulletBetweenCoords` native which could potentially get detected by some Anticheat resources.
+{% endhint %}
 
 ## Instructions
 
