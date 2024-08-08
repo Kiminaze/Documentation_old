@@ -1,6 +1,6 @@
 # Exports (server)
 
-### DeleteVehicle(vehicle, keepInWorld)
+## DeleteVehicle
 
 Deletes a vehicle from the world and the internal table so that it doesn't respawn.
 
@@ -16,7 +16,7 @@ exports["AdvancedParking"]:DeleteVehicle(vehicle, false)
 
 ***
 
-### GetVehiclePosition(plate)
+## GetVehiclePosition
 
 Returns the position of a single vehicle.
 
@@ -33,7 +33,7 @@ Returns the position of a single vehicle.
 
 ***
 
-### GetVehiclePositions(...)
+## GetVehiclePositions
 
 Returns the positions of several given vehicles.
 
@@ -54,7 +54,7 @@ end
 
 ***
 
-### DeleteVehicleUsingData(identifier, networkId, plate, keepInWorld)
+## DeleteVehicleUsingData
 
 Delete a vehicle without having access to the entity directly. At least one of the first three parameters must be provided.
 
@@ -76,7 +76,7 @@ exports["AdvancedParking"]:DeleteVehicleUsingData(identifier, networkId, plate, 
 
 ***
 
-### EnsureStateBag(vehicle, bagKey)
+## EnsureStateBag
 
 Ensures that a specific state bag on an entity is saved by AdvancedParking.
 
@@ -95,7 +95,7 @@ local success = exports["AdvancedParking"]:EnsureStateBag(vehicle, "fuel")
 
 ***
 
-### GetVehicleFromStateBagValue(bagKey, bagValue)
+## GetVehicleFromStateBagValue
 
 Tries to find a vehicle that has a specific state bag value attached.
 
@@ -114,7 +114,7 @@ local vehicle = exports["AdvancedParking"]:GetVehicleFromStateBagValue(bagKey, b
 
 ***
 
-### GetStateBagsFromVehicle(vehicle)
+## GetStateBagsFromVehicle
 
 Gets all state bags from a vehicle that has been saved by AdvancedParking.
 
@@ -132,7 +132,7 @@ local stateBags = exports["AdvancedParking"]:GetStateBagsFromVehicle(vehicle)
 
 ***
 
-### GetStateBagsFromPlate(plate)
+## GetStateBagsFromPlate
 
 Gets all state bags from a vehicle that has been saved by AdvancedParking given its plate.
 
