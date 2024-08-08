@@ -14,24 +14,6 @@ exports["AdvancedParking"]:DeleteVehicle(vehicle, false)
 
 
 
-### DeleteVehicle(vehicle, keepInWorld)
-
-{% tabs %}
-{% tab title="Para" %}
-```lua
-exports["AdvancedParking"]:DeleteVehicle(vehicle, false)
-```
-{% endtab %}
-
-{% tab title="Example" %}
-Deletes a vehicle from the world and the internal table so that it doesn't respawn.
-
-<mark style="color:red;">**Parameters:**</mark>\
-**vehicle** - `int` - The vehicle to delete.\
-**keepInWorld?** - `bool` - If the vehicle should stay in the world.
-{% endtab %}
-{% endtabs %}
-
 ***
 
 ### GetVehiclePosition(plate)
@@ -90,21 +72,7 @@ local plate = GetVehicleNumberPlateText(vehicle)
 exports["AdvancedParking"]:DeleteVehicleUsingData(identifier, networkId, plate, true)
 ```
 
-{% tabs %}
-{% tab title="First Tab" %}
-```
-local identifier = Entity(vehicle).state.ap_id
-local networkId = NetworkGetNetworkIdFromEntity(vehicle)
-local plate = GetVehicleNumberPlateText(vehicle)
 
-exports["AdvancedParking"]:DeleteVehicleUsingData(identifier, networkId, plate, true)
-```
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
-{% endtabs %}
 
 ***
 
@@ -123,6 +91,8 @@ Ensures that a specific state bag on an entity is saved by AdvancedParking.
 local success = exports["AdvancedParking"]:EnsureStateBag(vehicle, "fuel")
 ```
 
+
+
 ***
 
 ### GetVehicleFromStateBagValue(bagKey, bagValue)
@@ -140,6 +110,8 @@ Tries to find a vehicle that has a specific state bag value attached.
 local vehicle = exports["AdvancedParking"]:GetVehicleFromStateBagValue(bagKey, bagValue)
 ```
 
+
+
 ***
 
 ### GetStateBagsFromVehicle(vehicle)
@@ -155,6 +127,8 @@ Gets all state bags from a vehicle that has been saved by AdvancedParking.
 ```lua
 local stateBags = exports["AdvancedParking"]:GetStateBagsFromVehicle(vehicle)
 ```
+
+
 
 ***
 
