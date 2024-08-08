@@ -1,6 +1,6 @@
 # Exports (server)
 
-### StartTracker(playerId, plate)
+## StartTracker
 
 Starts tracking the vehicle with the specified plate for a player.
 
@@ -14,9 +14,11 @@ Starts tracking the vehicle with the specified plate for a player.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleTracker"]:StartTracker(playerId, plate)
 </strong></code></pre>
 
+
+
 ***
 
-### StopTracker(playerId, plate)
+## StopTracker
 
 Stops tracking the vehicle with the specified plate for a player.
 

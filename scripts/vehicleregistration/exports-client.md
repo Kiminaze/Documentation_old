@@ -1,6 +1,6 @@
 # Exports (client)
 
-### OpenPlateSpecificHistory()
+## OpenPlateSpecificHistory
 
 Opens the UI for checking the history of a plate.
 

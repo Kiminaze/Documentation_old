@@ -1,6 +1,6 @@
 # Exports (client)
 
-### GetVehicleDeformation(vehicle)
+## GetVehicleDeformation(vehicle)
 
 Gets the vehicles deformation in a table.
 
@@ -10,9 +10,11 @@ Gets the vehicles deformation in a table.
 <mark style="color:green;">**Returns:**</mark>\
 `table<table<offset: vector3, damage: number>>` - List of offsets from the vehicle and the relative damage.
 
+
+
 ***
 
-### SetVehicleDeformation(vehicle, deformation)
+## SetVehicleDeformation(vehicle, deformation)
 
 Sets the deformation on a vehicle.
 
@@ -20,18 +22,22 @@ Sets the deformation on a vehicle.
 **vehicle** - `number` - The handle of the vehicle.\
 **deformation** - `table<table<offset: vector3, damage: number>>` - The deformation values.
 
+
+
 ***
 
-### FixVehicleDeformation(vehicle)
+## FixVehicleDeformation(vehicle)
 
 Fixes the deformation of a vehicle.
 
 <mark style="color:red;">**Parameters:**</mark>\
 **vehicle** - `number` - The handle of the vehicle.
 
+
+
 ***
 
-### IsDeformationWorse(firstDeformation, secondDeformation)
+## IsDeformationWorse(firstDeformation, secondDeformation)
 
 Compares both deformation tables and returns if the first one is worse than the second.
 
@@ -42,9 +48,11 @@ Compares both deformation tables and returns if the first one is worse than the 
 <mark style="color:green;">**Returns:**</mark>\
 `bool` - True if the first deformation is worse than the second one.
 
+
+
 ***
 
-### IsDeformationEqual(firstDeformation, secondDeformation)
+## IsDeformationEqual(firstDeformation, secondDeformation)
 
 Compares both deformation tables and returns if they are equal.
 

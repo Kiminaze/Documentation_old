@@ -1,6 +1,6 @@
 # Exports (client)
 
-### StartOrbitCam(position, entity, minRadius, maxRadius)
+## StartOrbitCam(position, entity, minRadius, maxRadius)
 
 Starts the orbit camera.
 
@@ -10,15 +10,19 @@ Starts the orbit camera.
 **minRadius** - `float?` - The minimum radius the camera will orbit at. Can be omitted.\
 **maxRadius** - `float?` - The maximum radius the camera will orbit at. Can be omitted.
 
+
+
 ***
 
-### EndOrbitCam()
+## EndOrbitCam()
 
 Stops the orbit camera.
 
+
+
 ***
 
-### UpdateCamPosition(position, entity, minRadius, maxRadius)
+## UpdateCamPosition(position, entity, minRadius, maxRadius)
 
 Sets the camera focus to a different position (or updates other values).
 
@@ -28,18 +32,22 @@ Sets the camera focus to a different position (or updates other values).
 **minRadius** - `float?` - The minimum radius the camera will orbit at. Can be omitted.\
 **maxRadius** - `float?` - The maximum radius the camera will orbit at. Can be omitted.
 
+
+
 ***
 
-### IsOrbitCamActive()
+## IsOrbitCamActive()
 
 Check if the orbit cam is currently active.
 
 <mark style="color:green;">**Returns:**</mark>\
 `bool` - True if the camera is currently active.
 
+
+
 ***
 
-### IsEntityBeingTracked(entity)
+## IsEntityBeingTracked(entity)
 
 Checks if an entity is being tracked. Omitting **entity** parameter checks for any entity.
 
@@ -49,9 +57,11 @@ Checks if an entity is being tracked. Omitting **entity** parameter checks for a
 <mark style="color:green;">**Returns:**</mark>\
 `bool` - If the/any entity is being tracked.
 
+
+
 ***
 
-### GetTrackedEntity()
+## GetTrackedEntity()
 
 Returns the currently tracked entity
 

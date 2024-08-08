@@ -1,6 +1,6 @@
 # Exports (server)
 
-### ChangePlate(playerId, vehicleNetId, newPlate)
+## ChangePlate
 
 Returns the position of a single vehicle.
 
@@ -15,9 +15,11 @@ Returns the position of a single vehicle.
 <pre class="language-lua"><code class="lang-lua"><strong>local success = exports["VehicleRegistration"]:ChangePlate(playerId, vehicleNetId, newPlate)
 </strong></code></pre>
 
+
+
 ***
 
-### GetFullHistory(playerId)
+## GetFullHistory
 
 Get the full history of all plate changes from a player.
 
@@ -40,9 +42,11 @@ for plate, data in pairs(history) do
 end
 ```
 
+
+
 ***
 
-### GetHistory(playerId, plate)
+## GetHistory
 
 Get the history of a specific player's plate.
 
@@ -63,9 +67,11 @@ for i = 1, #history do
 end
 ```
 
+
+
 ***
 
-### GetPlateHistory(plate)
+## GetPlateHistory
 
 Get the history of a specified plate.
 
@@ -84,4 +90,3 @@ for i = 1, #history do
     print("")
 end
 ```
-

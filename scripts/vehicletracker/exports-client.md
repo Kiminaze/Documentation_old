@@ -1,6 +1,6 @@
 # Exports (client)
 
-### OpenMenu()
+## OpenMenu
 
 Opens the UI for tracking vehicles.
 

@@ -1,15 +1,17 @@
 # Exports (client)
 
-### OpenInventory()
+## OpenInventory
 
 Opens the key inventory for the player. If the menu is open, it will be closed instead.
 
 <pre class="language-lua"><code class="lang-lua"><strong>exports["VehicleKeyChain"]:OpenInventory()
 </strong></code></pre>
 
+
+
 ***
 
-### GetPlayerKeys()
+## GetPlayerKeys
 
 Returns a list containing all player keys.
 
@@ -26,9 +28,11 @@ for i = 1, #keys do
 end
 ```
 
+
+
 ***
 
-### GetPlayerVehicles()
+## GetPlayerVehicles
 
 Returns a list of all vehicles a player owns.
 
@@ -43,9 +47,11 @@ Returns a list of all vehicles a player owns.
 end
 </code></pre>
 
+
+
 ***
 
-### GetPlayerVehiclesAndKeys()
+## GetPlayerVehiclesAndKeys
 
 Returns a list of all vehicles a player owns.
 
@@ -67,9 +73,11 @@ for i = 1, #keys do
 end
 </code></pre>
 
+
+
 ***
 
-### GetPlayerVehiclesAndKeyCount()
+## GetPlayerVehiclesAndKeyCount
 
 Returns a list of all vehicles a player owns including the amount of keys.
 
@@ -85,9 +93,11 @@ Returns a list of all vehicles a player owns including the amount of keys.
 end
 </code></pre>
 
+
+
 ***
 
-### GetPlayerTempKeys()
+## GetPlayerTempKeys
 
 Returns a list of all temporary keys a player owns.
 
@@ -102,9 +112,11 @@ Returns a list of all temporary keys a player owns.
 end
 </code></pre>
 
+
+
 ***
 
-### IsVehicleOwner(vehicle)
+## IsVehicleOwner
 
 Check if a player is the owner of a vehicle.
 
@@ -117,7 +129,11 @@ Check if a player is the owner of a vehicle.
 <pre class="language-lua"><code class="lang-lua"><strong>local isVehicleOwner = exports["VehicleKeyChain"]:IsVehicleOwner(vehicle)
 </strong></code></pre>
 
-### IsKeyOwner(vehicle)
+
+
+***
+
+## IsKeyOwner
 
 Check if a player is the owner of a key for a vehicle.
 
@@ -130,7 +146,11 @@ Check if a player is the owner of a key for a vehicle.
 <pre class="language-lua"><code class="lang-lua"><strong>local isKeyOwner = exports["VehicleKeyChain"]:IsKeyOwner(vehicle)
 </strong></code></pre>
 
-### IsVehicleOrKeyOwner(vehicle)
+
+
+***
+
+## IsVehicleOrKeyOwner
 
 Check if a player is the owner of a vehicle or a key for the vehicle.
 
@@ -143,9 +163,11 @@ Check if a player is the owner of a vehicle or a key for the vehicle.
 <pre class="language-lua"><code class="lang-lua"><strong>local isOwner = exports["VehicleKeyChain"]:IsVehicleOrKeyOwner(vehicle)
 </strong></code></pre>
 
+
+
 ***
 
-### ToggleLock()
+## ToggleLock
 
 Toggles the lock of the closest and owned vehicle.
 

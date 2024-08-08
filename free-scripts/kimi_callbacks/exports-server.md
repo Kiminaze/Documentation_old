@@ -1,6 +1,6 @@
 # Exports (server)
 
-### Register(callbackName, callbackHandler)
+## Register(**callbackName, callbackHandler**)
 
 Registers a callback on server side. A client can then call this callback to request data from the server.
 
@@ -8,18 +8,22 @@ Registers a callback on server side. A client can then call this callback to req
 **callbackName** - `string` - The name of the callback to register (must be unique!).\
 **callbackHandler** - `function` - The function to be executed that will return your values.
 
+
+
 ***
 
-### Remove(callbackName)
+## Remove(callbackName)
 
 Removes a callback from server side.
 
 <mark style="color:red;">**Parameters:**</mark>\
 **callbackName** - `string` - The name of the callback you want to remove.
 
+
+
 ***
 
-### Trigger(callbackName, playerId, ...)
+## Trigger(callbackName, playerId, ...)
 
 Triggers a (blocking) client callback on the specified client with a default timeout of 5000ms.
 
@@ -31,9 +35,11 @@ Triggers a (blocking) client callback on the specified client with a default tim
 <mark style="color:green;">**Returns:**</mark>\
 `...` - Any values returned from the client callback.
 
+
+
 ***
 
-### TriggerWithTimeout(name, playerId, timeout, ...)
+## TriggerWithTimeout(name, playerId, timeout, ...)
 
 Triggers a (blocking) client callback on the specified client with a specified timeout.
 
@@ -46,9 +52,11 @@ Triggers a (blocking) client callback on the specified client with a specified t
 <mark style="color:green;">**Returns:**</mark>\
 `...` - Any values returned from the client callback.
 
+
+
 ***
 
-### TriggerAsync(callbackName, playerId, handler, ...)
+## TriggerAsync(callbackName, playerId, handler, ...)
 
 Triggers a client callback on the specified client with a default timeout of 5000ms and executes a callback function.
 
@@ -58,9 +66,11 @@ Triggers a client callback on the specified client with a default timeout of 500
 **handler** - `function` - The function to execute after the callback succeeded. It's parameters are the return values from the callback.\
 **...** - `?` - The values you need to send to the client for the callback to work.
 
+
+
 ***
 
-### TriggerWithTimeoutAsync(name, playerId, timeout, callback, ...)
+## TriggerWithTimeoutAsync(name, playerId, timeout, callback, ...)
 
 Triggers a client callback on the specified client with a specified timeout and executes a callback function.
 
