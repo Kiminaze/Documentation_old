@@ -20,7 +20,7 @@ Sets the deformation on a vehicle.
 
 <mark style="color:red;">**Parameters:**</mark>\
 **vehicle** - `number` - The handle of the vehicle.\
-**deformation** - `table<table<offset: vector3, damage: number>>` - The deformation values.
+**deformation** - `table<table<offset: vector3, damage: vector3>>` - The deformation values.
 
 
 
@@ -62,3 +62,17 @@ Compares both deformation tables and returns if they are equal.
 
 <mark style="color:green;">**Returns:**</mark>\
 `bool` - True if both deformation tables are equal.
+
+
+
+***
+
+## GetDeformationOffsets(vehicle)
+
+Returns all offsets for a specified vehicle
+
+<mark style="color:red;">**Parameters:**</mark>\
+**vehicle** - `number` - The handle of the vehicle.
+
+<mark style="color:green;">**Returns:**</mark>\
+`table<vector3>` - A table containing all offsets around a vehicle.
