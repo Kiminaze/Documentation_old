@@ -36,6 +36,7 @@ This has been made very easy thanks to the included file `fixDeleteVehicle.lua` 
     shared_script "fixDeleteVehicle.lua"
     ```
     {% endcode %}
+* Do a `refresh` or restart your server after adding the `fixDeleteVehicle.lua.`
 
 If any other script does not delete a vehicle properly (The car gets deleted but appears instantly again.) then repeat these steps in the respective script.
 
