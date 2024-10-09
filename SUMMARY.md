@@ -45,6 +45,15 @@
   * [Installation](scripts/vehicleforcefirstperson/installation.md)
 * [🎯 BulletRicochet](scripts/bulletricochet/README.md)
   * [Installation](scripts/bulletricochet/installation.md)
+* [🗜️ VehicleClamp](scripts/vehicleclamp/README.md)
+  * [Installation](scripts/vehicleclamp/installation.md)
+  * [Commands](scripts/vehicleclamp/commands.md)
+  * [Exports (server)](scripts/vehicleclamp/exports-server.md)
+  * [Exports (client)](scripts/vehicleclamp/exports-client.md)
+  * [Integration](scripts/vehicleclamp/integration/README.md)
+    * [ESX](scripts/vehicleclamp/integration/esx.md)
+    * [QB](scripts/vehicleclamp/integration/qb.md)
+    * [Custom - TBD](scripts/vehicleclamp/integration/custom-tbd.md)
 
 ## 🆓 Free Scripts
 
