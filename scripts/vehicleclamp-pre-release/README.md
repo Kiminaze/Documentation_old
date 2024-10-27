@@ -19,6 +19,16 @@ This script can be used as a standalone resource or together with your favorite 
 
 SHOWCASE VIDEO - TBD
 
+## <mark style="color:red;">**What does Pre-Release mean?**</mark>
+
+* This resource is not 100% complete and will be developed over time.
+* During this period, customer feedback is highly encouraged.
+* Discount for early customers.
+* What's missing in this resource?
+  * Additional 3D model for smaller/bigger wheels than average.
+  * Attaching a clamp to inset rims can lead to the clamp clipping slightly into the wheel (only visual)
+  * Clamp model sometimes appears flipped 180° (only visual)
+
 ## Features
 
 * Attaching a wheel clamp will prevent the vehicle from being driven.
