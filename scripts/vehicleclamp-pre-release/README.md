@@ -17,7 +17,7 @@ Just be close to the wheel you want to clamp. Use the item or your own implement
 
 This script can be used as a standalone resource or together with your favorite framework. Check [Integration](https://docs.kiminaze.de/scripts/vehicleclamp/integration) for more information.
 
-SHOWCASE VIDEO - TBD
+{% embed url="https://www.youtube.com/watch?v=VXVS8j6wBuE" %}
 
 ## <mark style="color:red;">**What does Pre-Release mean?**</mark>
 
