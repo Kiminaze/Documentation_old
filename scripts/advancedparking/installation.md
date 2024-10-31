@@ -38,7 +38,9 @@ This has been made very easy thanks to the included file `fixDeleteVehicle.lua` 
     {% endcode %}
 * Do a `refresh` or restart your server after adding the `fixDeleteVehicle.lua.`
 
-If any other script does not delete a vehicle properly (The car gets deleted but appears instantly again.) then repeat these steps in the respective script.
+{% hint style="danger" %}
+<mark style="color:yellow;">If any other script does not delete a vehicle properly (The car gets deleted but appears instantly again.) then repeat these steps in the respective script.</mark>
+{% endhint %}
 
 {% hint style="info" %}
 There might be some scripts out there where this will not work. If you find yourself in this situation, it might be best to simply ask for help in our support.
