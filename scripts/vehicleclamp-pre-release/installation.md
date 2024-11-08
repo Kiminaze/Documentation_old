@@ -16,3 +16,6 @@
     ensure VehicleClamp
     ```
     {% endcode %}
+4. Follow the steps outlined in [Integration](https://docs.kiminaze.de/scripts/vehicleclamp-pre-release/integration) to make sure it works for your server
+   1. [Integration for ESX](https://docs.kiminaze.de/scripts/vehicleclamp-pre-release/integration/esx)
+   2. [Integration for QB](https://docs.kiminaze.de/scripts/vehicleclamp-pre-release/integration/qb)
