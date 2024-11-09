@@ -1,5 +1,15 @@
 # ESX
 
+## Ready-made file
+
+You can either directly use this file to replace the original or use the instructions below to make the changes yourself and maybe learn a thing here and there.
+
+{% file src="../../../.gitbook/assets/integrations.lua" %}
+Integrations file ready-made for ESX
+{% endfile %}
+
+***
+
 ## Initialization
 
 Add the following at the top of the file:
