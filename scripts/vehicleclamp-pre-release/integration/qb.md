@@ -8,6 +8,8 @@ You can either directly use this file to replace the original or use the instruc
 Integrations file ready-made for QB
 {% endfile %}
 
+***
+
 ## Initialization
 
 Add the following at the top of the file:
