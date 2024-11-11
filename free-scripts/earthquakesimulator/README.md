@@ -5,7 +5,7 @@
 {% embed url="https://www.youtube.com/watch?v=23IjCfy2c4o" %}
 
 * [Latest release version](https://github.com/Kiminaze/EarthquakeSimulator/releases/latest)
-* Forum topic - TBD
+* [Forum topic](https://forum.cfx.re/t/earthquake-simulator-create-chaos-and-confusion/5279324)
 
 ## Description
 
