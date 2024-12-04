@@ -124,7 +124,9 @@ After a server restart vehicles that are still outside will be shown as parked a
 
 <mark style="color:green;">**Solution**</mark>
 
-Find the function takeOutVehicle inside okokGarage's sv\_utils.lua and add the following code as the first line:
+Make sure to disable okokGarage's config option called: `Config.SetVehicleImpoundAfter`
+
+Then find the function `takeOutVehicle` inside okokGarage's sv\_utils.lua and add the following code as the first line:
 
 ```lua
 if (exports["AdvancedParking"]:GetVehiclePosition(vehicle_plate)) then
