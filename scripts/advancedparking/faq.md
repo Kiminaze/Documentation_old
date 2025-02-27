@@ -159,6 +159,8 @@ function takeOutVehicle(db, _source, vehicle_plate, vehicle_id, index, vehicle_n
 
 <mark style="color:green;">**Solution**</mark>
 
+Make sure to disable cd\_garage's built-in persistence feature in their config.
+
 Add a `Wait(1000)` in between lines 113/114 inside `AdvancedParking/client/client.lua`.
 
 <details>
@@ -218,3 +220,4 @@ end
 ```
 
 </details>
+
