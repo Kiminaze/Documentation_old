@@ -30,7 +30,7 @@ Triggers a (blocking) client callback on the specified client with a default tim
 <mark style="color:red;">**Parameters:**</mark>\
 **callbackName** - `string` - The name of the callback to execute.\
 **playerId** - `number` - The server side player id (source) of the player.\
-**...** - `?` - The values you need to send to the client for the callback to work.
+&#xNAN;**...** - `?` - The values you need to send to the client for the callback to work.
 
 <mark style="color:green;">**Returns:**</mark>\
 `...` - Any values returned from the client callback.
@@ -47,7 +47,7 @@ Triggers a (blocking) client callback on the specified client with a specified t
 **callbackName** - `string` - The name of the callback to execute.\
 **playerId** - `number` - The server side player id (source) of the player.\
 **timeout** - `number` - The timeout in milliseconds.\
-**...** - `?` - The values you need to send to the client for the callback to work.
+&#xNAN;**...** - `?` - The values you need to send to the client for the callback to work.
 
 <mark style="color:green;">**Returns:**</mark>\
 `...` - Any values returned from the client callback.
@@ -64,7 +64,7 @@ Triggers a client callback on the specified client with a default timeout of 500
 **callbackName** - `string` - The name of the callback to execute.\
 **playerId** - `number` - The server side player id (source) of the player.\
 **handler** - `function` - The function to execute after the callback succeeded. It's parameters are the return values from the callback.\
-**...** - `?` - The values you need to send to the client for the callback to work.
+&#xNAN;**...** - `?` - The values you need to send to the client for the callback to work.
 
 
 
@@ -79,4 +79,4 @@ Triggers a client callback on the specified client with a specified timeout and 
 **playerId** - `number` - The server side player id (source) of the player.\
 **timeout** - `number` - The timeout in milliseconds.\
 **handler** - `function` - The function to execute after the callback succeeded. It's parameters are the return values from the callback.\
-**...** - `?` - The values you need to send to the client for the callback to work.
+&#xNAN;**...** - `?` - The values you need to send to the client for the callback to work.

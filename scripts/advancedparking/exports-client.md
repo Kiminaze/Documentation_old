@@ -53,7 +53,7 @@ local position = exports["AdvancedParking"]:GetVehiclePosition(plate)
 Returns the positions of several given vehicles.
 
 <mark style="color:red;">**Parameters:**</mark>\
-**...** - `string` - The license plates of several vehicles as parameters.
+&#xNAN;**...** - `string` - The license plates of several vehicles as parameters.
 
 <mark style="color:green;">**Returns:**</mark>\
 `dictionary<plate, position>` - The positions of the vehicles. Can be empty if none was found.

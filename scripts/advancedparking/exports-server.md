@@ -38,7 +38,7 @@ Returns the position of a single vehicle.
 Returns the positions of several given vehicles.
 
 <mark style="color:red;">**Parameters:**</mark>\
-**...** - `string` - Variable number of license plates as arguments.
+&#xNAN;**...** - `string` - Variable number of license plates as arguments.
 
 <mark style="color:green;">**Returns:**</mark>\
 `dictionary<string, vector3>` - The positions of the vehicles. Can be empty if none was found.

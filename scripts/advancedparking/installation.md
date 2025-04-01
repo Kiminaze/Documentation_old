@@ -4,7 +4,7 @@
 
 * OneSync
 * [MySQL Async Library](https://forum.cfx.re/t/release-mysql-async-library-3-3-2/21881) or [OxMySQL](https://forum.cfx.re/t/standalone-oxmysql-lightweight-mysql-wrapper/4755120)
-* [kimi\_callbacks](https://github.com/Kiminaze/kimi\_callbacks/releases/latest)
+* [kimi\_callbacks](https://github.com/Kiminaze/kimi_callbacks/releases/latest)
 
 ## Instructions
 
@@ -12,7 +12,7 @@
 
 1. Download the script from your keymaster website and extract it into your resources folder.
 2. Download and install mysql-async or OxMySQL (can be skipped if using ESX or QB).
-3. Download [kimi\_callbacks.zip](https://github.com/Kiminaze/kimi\_callbacks/releases/latest) and extract it into your resources folder.
+3. Download [kimi\_callbacks.zip](https://github.com/Kiminaze/kimi_callbacks/releases/latest) and extract it into your resources folder.
 4.  Start the resource in your server.cfg:
 
     {% code fullWidth="false" %}
@@ -46,4 +46,4 @@ This has been made very easy thanks to the included file `fixDeleteVehicle.lua` 
 There might be some scripts out there where this will not work. If you find yourself in this situation, it might be best to simply ask for help in our support.
 {% endhint %}
 
-{% embed url="https://youtu.be/Kv-V1RktcTc" %}
+{% embed url="https://www.youtube.com/watch?v=Re2zKc_FpCk" %}
