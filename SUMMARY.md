@@ -56,11 +56,11 @@
 
 ## 🆓 Free Scripts
 
-* [📞 kimi\_callbacks](free-scripts/kimi\_callbacks/README.md)
-  * [Installation](free-scripts/kimi\_callbacks/installation.md)
-  * [Exports (server)](free-scripts/kimi\_callbacks/exports-server.md)
-  * [Exports (client)](free-scripts/kimi\_callbacks/exports-client.md)
-  * [Examples](free-scripts/kimi\_callbacks/examples.md)
+* [📞 kimi\_callbacks](free-scripts/kimi_callbacks/README.md)
+  * [Installation](free-scripts/kimi_callbacks/installation.md)
+  * [Exports (server)](free-scripts/kimi_callbacks/exports-server.md)
+  * [Exports (client)](free-scripts/kimi_callbacks/exports-client.md)
+  * [Examples](free-scripts/kimi_callbacks/examples.md)
 * [🚜 VehicleDeformation](free-scripts/vehicledeformation/README.md)
   * [Installation](free-scripts/vehicledeformation/installation.md)
   * [Exports (server)](free-scripts/vehicledeformation/exports-server.md)
@@ -68,6 +68,7 @@
 * [🎦 OrbitCam](free-scripts/orbitcam/README.md)
   * [Installation](free-scripts/orbitcam/installation.md)
   * [Exports (client)](free-scripts/orbitcam/exports-client.md)
+  * [Commands](free-scripts/orbitcam/commands.md)
 * [🏔️ EarthquakeSimulator](free-scripts/earthquakesimulator/README.md)
   * [Installation](free-scripts/earthquakesimulator/installation.md)
   * [Exports (server)](free-scripts/earthquakesimulator/exports-server.md)
