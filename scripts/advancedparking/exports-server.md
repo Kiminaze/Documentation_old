@@ -218,7 +218,7 @@ exports["AdvancedParking"]:UpdatePlate(networkId, newPlate)
 
 ## FreezeVehicle
 
-Freezes (or unfreezes) a vehicle. This is intended to be used from the `fixFreezeEntity.lua` but can be used when the file cannot be used.
+Freezes (or unfreezes) a vehicle. This is intended to be used from the `fixFreezeEntity.lua` but can be used when the file cannot be used. Can only be executed when using the `forceUnfreezeVehicles` config option.
 
 <mark style="color:red;">**Parameters:**</mark>\
 **vehicle** - `int` - The vehicle handle.\
