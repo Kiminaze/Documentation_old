@@ -2,16 +2,13 @@
 
 ## AP:vehicleSpawned
 
-Triggered when a vehicle has been spawned by AdvancedParking. This is also triggered for players outside of scope, so you need to check if the entity exists.
+Triggered when a vehicle has been spawned by AdvancedParking.
 
 <mark style="color:red;">**Parameters:**</mark>\
-**vehicleNetworkId** - `int` - The vehicle's network id.
+**vehicle** - `int` - The vehicle's handle.
 
 ```lua
-AddEventHandler("AP:vehicleSpawned", function(vehicleNetworkId)
-    if (not NetworkDoesEntityExistWithNetworkId(vehicleNetworkId)) then return end
-    
-    local vehicle = NetworkGetEntityFromNetworkId(vehicleNetworkId)
+AddEventHandler("AP:vehicleSpawned", function(vehicle)
     print("Vehicle " .. GetVehicleNumberPlateText(vehicle) .. " spawned")
 end)
 ```
