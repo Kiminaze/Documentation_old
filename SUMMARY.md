@@ -12,6 +12,7 @@
 * [🚙 AdvancedParking](scripts/advancedparking/README.md)
   * [Installation](scripts/advancedparking/installation.md)
   * [Commands](scripts/advancedparking/commands.md)
+  * [Convars](scripts/advancedparking/convars.md)
   * [Exports (server)](scripts/advancedparking/exports-server.md)
   * [Exports (client)](scripts/advancedparking/exports-client.md)
   * [Events (server)](scripts/advancedparking/events-server.md)
