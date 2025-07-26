@@ -7,9 +7,13 @@ description: >-
 
 # Convars
 
+{% hint style="info" %}
 All of AdvancedParking's convars are prefixed with the current resource name. If you change the resource name, you change the convar name!
+{% endhint %}
 
+{% hint style="info" %}
 All following convars can be set to `0` (disabled) or `1` (enabled). The default value is shown in the example below.
+{% endhint %}
 
 ## telemetry
 
