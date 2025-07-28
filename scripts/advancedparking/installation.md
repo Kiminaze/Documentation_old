@@ -46,4 +46,8 @@ This fix should be added to your framework resource (`es_extended`, `qb-core`, e
 There might be some scripts out there where this will _not_ work. If you find yourself in this situation, it might be best to simply ask for help in our support.
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=Re2zKc_FpCk" %}
+### Installation Videos
+
+{% embed url="https://www.youtube.com/watch?v=1IPgzh8Y6P0" %}
+
+{% embed url="https://www.youtube.com/watch?v=HMNh9aUPn_8" %}
