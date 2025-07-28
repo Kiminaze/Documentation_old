@@ -8,10 +8,9 @@
 
 ## Instructions
 
-**Note:** Updating from any release before v3.0.0 requires you to delete the database table `vehicle_parking` once! Saved data is **not** compatible with the new version.
-
-1. Download the script from your keymaster website and extract it into your resources folder.
-2. Download and install mysql-async or OxMySQL (can be skipped if using ESX or QB).
+1. Download the script from [Portal](https://portal.cfx.re/assets/created-assets) and extract it into your resources folder.\
+   (do _**not**_ use the experimental version unless you explicitly want to)
+2. Download and install OxMySQL (can be skipped if you are already using it).
 3. Download [kimi\_callbacks.zip](https://github.com/Kiminaze/kimi_callbacks/releases/latest) and extract it into your resources folder.
 4.  Start the resource in your server.cfg:
 
@@ -20,7 +19,7 @@
     ensure AdvancedParking
     ```
     {% endcode %}
-5. Adding the [`Deleting vehicles`](installation.md#deleting-vehicles) function to your framework and other scripts, if they need to remove vehicle that are saved by AdvancedParking.
+5. Make sure to implement [the fix below](https://docs.kiminaze.de/scripts/advancedparking/installation#deleting-vehicles) if you still need to delete vehicles!
 
 ***
 
@@ -28,22 +27,23 @@
 
 This has been made very easy thanks to the included file `fixDeleteVehicle.lua` that you will find inside the AdvancedParking folder. **You don´t need to use the exports!**
 
-* Copy and paste the `fixDeleteVehicle.lua` file into the folder of your framework like  `es_extended` or `qb-core`. ( Directly in the framework folder, not in any sub folder. )
-*   Then add the following line inside the fxmanifest of that framework resource:
+This fix should be added to your framework resource (`es_extended`, `qb-core`, etc) first and foremost!
+
+*   Simply add the following line inside the fxmanifest of the respective resource:
 
     {% code fullWidth="false" %}
     ```lua
-    shared_script "fixDeleteVehicle.lua"
+    shared_script "@AdvancedParking/fixDeleteVehicle.lua"
     ```
     {% endcode %}
-* Do a `refresh` or restart your server after adding the `fixDeleteVehicle.lua.`
+* Refresh the resource list and restart the respective resource or restart your server after adding the line.
 
 {% hint style="danger" %}
-<mark style="color:yellow;">If any other script does not delete a vehicle properly (The car gets deleted but appears instantly again.) then repeat these steps in the respective script.</mark>
+<mark style="color:yellow;">If any other script does not delete a vehicle properly (it gets deleted but appears again) then repeat this step in the respective script.</mark>
 {% endhint %}
 
 {% hint style="info" %}
-There might be some scripts out there where this will not work. If you find yourself in this situation, it might be best to simply ask for help in our support.
+There might be some scripts out there where this will _not_ work. If you find yourself in this situation, it might be best to simply ask for help in our support.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=Re2zKc_FpCk" %}
