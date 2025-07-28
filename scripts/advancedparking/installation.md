@@ -3,7 +3,7 @@
 ## Requirements
 
 * OneSync
-* [MySQL Async Library](https://forum.cfx.re/t/release-mysql-async-library-3-3-2/21881) or [OxMySQL](https://forum.cfx.re/t/standalone-oxmysql-lightweight-mysql-wrapper/4755120)
+* [OxMySQL](https://forum.cfx.re/t/standalone-oxmysql-lightweight-mysql-wrapper/4755120)
 * [kimi\_callbacks](https://github.com/Kiminaze/kimi_callbacks/releases/latest)
 
 ## Instructions
