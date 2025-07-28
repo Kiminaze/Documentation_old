@@ -221,3 +221,27 @@ end
 
 </details>
 
+
+
+***
+
+## JG Advanced Garages
+
+<mark style="color:red;">**Issue**</mark>
+
+When enabling `Cleanup.storeVehicles` vehicles won't be stored properly.
+
+<mark style="color:green;">**Solution**</mark>
+
+Add the missing columns to the query inside `AdvancedParking/server/storage/oxmysql.lua` and change `"YOUR_GARAGE_NAME"` to the name of the garage.
+
+You can simply replace `Storage.StoreVehicleInGarage` with the following:
+
+```lua
+Storage.StoreVehicleInGarage = function(params)
+    oxmysql:update(([[
+        UPDATE `%s` SET `%s` = 1, `in_garage` = 1, `garage_id` = ?
+            WHERE `plate` = ? OR `plate` = ?;
+    ]]):format(GetOwnedVehiclesTableName(), GetStoredColumnName()), "YOUR_GARAGE_NAME", params)
+end
+```
