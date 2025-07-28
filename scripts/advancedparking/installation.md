@@ -25,7 +25,7 @@
 
 ### Deleting vehicles
 
-This has been made very easy thanks to the included file `fixDeleteVehicle.lua` that you will find inside the AdvancedParking folder. **You don´t need to use the exports!**
+Usually you don´t need to use any of the provided "delete" exports!
 
 This fix should be added to your framework resource (`es_extended`, `qb-core`, etc) first and foremost!
 
