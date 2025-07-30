@@ -10,16 +10,17 @@
 
 1. Download the script from [Portal](https://portal.cfx.re/assets/created-assets) and extract it into your resources folder.\
    (do _**not**_ use the experimental version unless you explicitly want to)
-2. Download and install OxMySQL (can be skipped if you are already using it).
-3. Download [kimi\_callbacks.zip](https://github.com/Kiminaze/kimi_callbacks/releases/latest) and extract it into your resources folder.
-4.  Start the resource in your server.cfg:
+2. Make sure the resource name is `AdvancedParking`.
+3. Download and install OxMySQL (can be skipped if you are already using it).
+4. Download [kimi\_callbacks.zip](https://github.com/Kiminaze/kimi_callbacks/releases/latest) and extract it into your resources folder.
+5.  Start the resource in your server.cfg:
 
     {% code fullWidth="false" %}
     ```lua
     ensure AdvancedParking
     ```
     {% endcode %}
-5. Make sure to implement [the fix below](https://docs.kiminaze.de/scripts/advancedparking/installation#deleting-vehicles) if you still need to delete vehicles!
+6. Make sure to implement [the fix below](https://docs.kiminaze.de/scripts/advancedparking/installation#deleting-vehicles) if you still need to delete vehicles!
 
 ***
 
