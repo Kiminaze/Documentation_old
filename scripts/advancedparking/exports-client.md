@@ -35,11 +35,11 @@ exports["AdvancedParking"]:UpdateVehicle(vehicle)
 Updates a plate in AdvancedParking's data. This is necessary when changing a **saved** vehicle's plate so that it doesn't get caught by one of the error protection systems.
 
 <mark style="color:red;">**Parameters:**</mark>\
-**networkId** - `int` - The vehicle's network id.\
+**vehicle** - `int` - Valid vehicle handle.\
 **newPlate** - `string` - The new plate to set.
 
 ```lua
-exports["AdvancedParking"]:UpdatePlate(networkId, newPlate)
+exports["AdvancedParking"]:UpdatePlate(vehicle, newPlate)
 ```
 
 
