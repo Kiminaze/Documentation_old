@@ -341,3 +341,47 @@ end
 ```
 
 </details>
+
+
+
+***
+
+## Jaksam vehicle\_keys
+
+<mark style="color:red;">**Issue**</mark>
+
+Missing keys after a server restart.
+
+<mark style="color:green;">**Solution**</mark>
+
+Add the following code to `AdvancedParking/client/cl_integrations.lua`:
+
+```lua
+AddEventHandler("esx:onPlayerSpawn",function(xPlayer, isNew, skin)
+    TriggerServerEvent("AP:checkKeys")
+end)
+```
+
+And this to `AdvancedParking/server/sv_integrations.lua`:
+
+```lua
+RegisterNetEvent("AP:checkKeys", function()
+    local ESX = exports["es_extended"]:getSharedObject()
+    local AP = exports["AdvancedParking"]
+    local src = source
+    local playerData = ESX.GetPlayerFromId(src)
+    local identifier = playerData.identifier
+    local job = playerData.getJob().name
+    oxmysql:query_async([[
+        SELECT `plate` 
+            FROM `owned_vehicles` 
+            WHERE `owner` = ? OR `owner` = ?;
+    ]], { identifier, job }, function(results)
+        for i, row in ipairs(results) do
+            if (AP:GetVehiclePosition(row.plate)) then
+                exports["vehicles_keys"]:giveVehicleKeysToIdentifier(identifier, row.plate, "temporary")
+            end
+        end
+    end)
+end)
+```
