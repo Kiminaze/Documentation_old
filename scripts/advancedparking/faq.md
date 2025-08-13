@@ -245,3 +245,63 @@ Storage.StoreVehicleInGarage = function(params)
     ]]):format(GetOwnedVehiclesTableName(), GetStoredColumnName()), "YOUR_GARAGE_NAME", params)
 end
 ```
+
+
+
+***
+
+## GG Garage Job
+
+<mark style="color:red;">**Issue**</mark>
+
+It uses a specific function to delete vehicles. Because of that, the [usual fix](https://docs.kiminaze.de/scripts/advancedparking/installation#deleting-vehicles) will not work for this script.
+
+<mark style="color:green;">**Solution**</mark>
+
+Find the function `gg.vehicleManager.removeVehicle` inside its files and add the following code right after the first line:
+
+```lua
+if (GetResourceState("AdvancedParking") == "started") then
+    exports["AdvancedParking"]:DeleteVehicle(entity)
+    return
+end
+```
+
+<details>
+
+<summary>Should look like this:</summary>
+
+```lua
+gg.vehicleManager.removeVehicle = function(entity)
+    if (GetResourceState("AdvancedParking") == "started") then
+        exports["AdvancedParking"]:DeleteVehicle(entity)
+        return
+    end
+
+    NetworkRequestControlOfEntity(entity)
+    local timeout = 2000
+    while timeout > 0 and not NetworkHasControlOfEntity(entity) do
+        Wait(100)
+        timeout = timeout - 100
+    end
+    SetEntityAsMissionEntity(entity, true, true)
+    local timeout = 2000
+    while timeout > 0 and not IsEntityAMissionEntity(entity) do
+        Wait(100)
+        timeout = timeout - 100
+    end
+    Citizen.InvokeNative( 0xEA386986E786A54F, Citizen.PointerValueIntInitialized( entity ) )
+    if ( DoesEntityExist( entity ) ) then 
+        DeleteEntity(entity)
+        if ( DoesEntityExist( entity ) ) then     
+            return false
+        else 
+            return true
+        end
+    else 
+        return true
+    end 
+end
+```
+
+</details>
