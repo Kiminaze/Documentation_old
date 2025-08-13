@@ -248,6 +248,38 @@ end
 
 
 
+<mark style="color:red;">**Issue**</mark>
+
+When using `qb-vehiclekeys` in tandem with JG's garage, players will lose their keys to job-owned vehicles after a server restart.
+
+<mark style="color:green;">**Solution**</mark>
+
+A slightly different version of [this fix](https://docs.kiminaze.de/scripts/advancedparking/faq#qb-vehiclekeys). This should be added at the bottom of `qb-vehiclekeys/server/main.lua`:
+
+```lua
+RegisterNetEvent("QBCore:Server:OnPlayerLoaded", function()
+    local playerId = source
+    local playerData = QBCore.Functions.GetPlayer(playerId).PlayerData
+    local citizenid = playerData.citizenid
+    local job = playerData.job.name
+    exports.oxmysql:execute("SELECT `plate` FROM `player_vehicles` WHERE `citizenid` = ? OR `citizenid` = ?;", {
+        citizenid,
+        job
+    }, function(result)
+        for i = 1, #result do
+            local plate = result[i].plate
+            if not VehicleList[plate] then
+                VehicleList[plate] = {}
+            end
+            VehicleList[plate][citizenid] = true
+            TriggerClientEvent("qb-vehiclekeys:client:AddKeys", playerId, plate)
+        end
+    end)
+end)
+```
+
+
+
 ***
 
 ## GG Garage Job
