@@ -248,6 +248,10 @@ end
 
 
 
+***
+
+## JG Garage + qb-vehiclekeys
+
 <mark style="color:red;">**Issue**</mark>
 
 When using `qb-vehiclekeys` in tandem with JG's garage, players will lose their keys to job-owned vehicles after a server restart.
